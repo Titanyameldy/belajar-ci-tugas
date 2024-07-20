@@ -26,14 +26,15 @@
         <div class="col-12">
             <label for="kabkota" class="form-label">Kab/Kota</label>
             <select class="form-select" id="kabupaten">
-                <option>Silahkan pilih Kab/Kota</option>
-            </select>    
+                <option>Silakan pilih Kab/Kota</option>
+                
+            </select>
         </div>
         <div class="col-12">
             <label for="layanan" class="form-label">Layanan</label>
             <select class="form-select" id="service">
-                <option>Silahkan pilih Layanan</option>
-            </select>    
+                <option>Silakan pilih Layanan</option>
+            </select>
         </div>
         <div class="col-12">
             <label for="ongkir" class="form-label">Ongkir</label>
@@ -116,7 +117,7 @@
                     for (var i = 0; i < results.length; i++) {
                         $("#kabupaten").append($('<option>', {
                             value: results[i]["city_id"],
-                            text: results[i]['type'] + " " + results[i]['city_name']
+                            text:  results[i]['city_name']
                         }));
                     }
                     hitungTotal();
